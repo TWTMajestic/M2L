@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #EAF9FF;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="btssio.sport.SQLVoirSportifdeCompetition">
+
+    <Label alignment="TOP_CENTER" prefHeight="35.0" prefWidth="385.0" style="-fx-margin-top: 30px; -fx-font-weight: bold;" text="Voir Sportifs d'une Compétition" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+      <VBox.margin>
+         <Insets top="30.0" />
+      </VBox.margin>
+      <font>
+         <Font size="24.0" />
+      </font></Label>
+   <AnchorPane VBox.vgrow="ALWAYS">
+         <Button mnemonicParsing="false" onAction="#ReturnBoutonSEquipe" prefHeight="30.0" prefWidth="30.0" styleClass="return" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" />
+         <Button mnemonicParsing="false" onAction="#HomeButton" prefHeight="30.0" prefWidth="30.0" styleClass="home" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="30.0" />
+         <TableView fx:id="TableViewVC" prefWidth="300.0" style="-fx-background-radius: 20;" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="50.0">
+           <columns>
+               <TableColumn fx:id="idCColumn" prefWidth="75.0" text="ID_C" />
+               <TableColumn fx:id="nomCColumn" prefWidth="75.0" text="Nom_C" />
+           </columns>
+            <columnResizePolicy>
+               <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+            <padding>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+         </TableView>
+         <TableView fx:id="TableViewVP" prefWidth="300.0" style="-fx-background-radius: 20;" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="550.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="50.0">
+               <columns>
+                   <TableColumn fx:id="idPColumn" prefWidth="75.0" text="ID_S" />
+                   <TableColumn fx:id="nomPColumn" prefWidth="54.0" text="Nom_S" />
+                   <TableColumn fx:id="prenomPColumn" prefWidth="66.0" text="Prenom_S" />
+               </columns>
+               <columnResizePolicy>
+                   <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+               <padding>
+                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+         </TableView>
+         <AnchorPane prefWidth="400.0" style="-fx-background-color: fff; -fx-background-radius: 20;" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="405.0" AnchorPane.topAnchor="50.0">
+             <padding>
+               <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+             </padding>
+             <Label layoutX="42.0" layoutY="115.0" style="-fx-font-size: 15; -fx-font-weight: bold;" text="ID Compet" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="140.0" />
+             <TextField fx:id="idTFM" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="140.0" />
+             <Button mnemonicParsing="false" onAction="#voir" styleClass="bouton" text="Valider" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="185.0" />
+             <Label alignment="CENTER" style="-fx-font-size: 20; -fx-font-weight: bold;" text="Formulaire de Recherche" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0" />
+             <Button layoutX="174.0" layoutY="326.0" mnemonicParsing="false" onAction="#reset" styleClass="bouton" text="Reset" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="185.0" AnchorPane.rightAnchor="20.0" />
+             <cursor>
+                 <Cursor fx:constant="HAND" />
+             </cursor>
+         </AnchorPane>
+   </AnchorPane>
+</VBox>

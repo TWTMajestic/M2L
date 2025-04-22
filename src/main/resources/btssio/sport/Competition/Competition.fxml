@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #EAF9FF;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="btssio.sport.HelloController">
+
+    <Label alignment="TOP_CENTER" prefHeight="35.0" prefWidth="385.0" style="-fx-margin-top: 30px; -fx-font-weight: bold;" text="Gestion Compétition" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+      <VBox.margin>
+         <Insets top="30.0" />
+      </VBox.margin>
+      <font>
+         <Font size="24.0" />
+      </font></Label>
+   <AnchorPane VBox.vgrow="ALWAYS">
+       <Button alignment="CENTER" onAction="#VoirCompetitionBouton" prefHeight="50.0" prefWidth="200.0" styleClass="bouton" text="Voir Compétition" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="100.0">
+           <padding>
+               <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+           </padding>
+       </Button>
+       <Button alignment="CENTER" onAction="#VoirPersCompetitionBouton" prefHeight="50.0" prefWidth="200.0" styleClass="boutonSub" text="Voir Sportif" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="100.0">
+           <padding>
+               <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+           </padding>SelectionPersButton
+       </Button>
+       <Button alignment="CENTER" onAction="#VoirEquipeCompetitionBouton" prefHeight="50.0" prefWidth="200.0" styleClass="boutonSub" text="Voir Equipe" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="200.0">
+           <padding>
+               <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+           </padding>
+       </Button>
+       <Button alignment="CENTER" onAction="#ModifierCompetBouton" prefHeight="50.0" prefWidth="200.0" styleClass="bouton" text="Editer Compétition" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="200.0">
+           <padding>
+               <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+           </padding>
+       </Button>
+       <Button alignment="CENTER" onAction="#ajouterEquipeACompetBouton" prefHeight="50.0" prefWidth="200.0" styleClass="boutonSub1" text="Ajouter Equipe" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="300.0">
+           <padding>
+               <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+           </padding>
+       </Button>
+       <Button mnemonicParsing="false" onAction="#HomeBouton" prefHeight="30.0" prefWidth="30.0" styleClass="home" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="30.0" />
+   </AnchorPane>
+</VBox>

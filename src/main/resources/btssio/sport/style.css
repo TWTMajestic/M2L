@@ -1,0 +1,68 @@
+.bouton:hover {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+}
+.bouton{
+    -fx-background-color: #2C3E50;
+    -fx-background-radius: 30;
+    -fx-text-fill: #fff;
+    -fx-font-weight: bold;
+}
+.boutonSub:hover {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+}
+.boutonSub{
+    -fx-background-color: #42678B;
+    -fx-background-radius: 30;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.boutonSub1:hover {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+}
+.boutonSub1{
+    -fx-background-color: #5280AD;
+    -fx-background-radius: 30;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.home{
+    -fx-background-color: #EAF9FF;
+    -fx-background-image: url('../../home.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}
+.home:hover {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+}
+.return{
+    -fx-background-color: #EAF9FF;
+    -fx-background-image: url('../../return.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}
+.return:hover {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+}
+.logout{
+    -fx-background-color: #EAF9FF;
+    -fx-background-image: url('../../logout.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}
+.logout:hover {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #EAF9FF;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="btssio.sport.SQLVoirSportif">
+
+    <Label alignment="TOP_CENTER" prefHeight="35.0" prefWidth="385.0" style="-fx-margin-top: 30px; -fx-font-weight: bold;" text="Voir Sportif" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+      <VBox.margin>
+         <Insets top="30.0" />
+      </VBox.margin>
+      <font>
+         <Font size="24.0" />
+      </font></Label>
+   <AnchorPane VBox.vgrow="ALWAYS">
+      <children>
+         <Button mnemonicParsing="false" onAction="#ReturnBoutonPersonne" prefHeight="30.0" prefWidth="30.0" styleClass="return" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" />
+         <Button mnemonicParsing="false" onAction="#HomeButton" prefHeight="30.0" prefWidth="30.0" styleClass="home" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="30.0" />
+          <TableView fx:id="personTableView" prefWidth="300.0" style="-fx-background-radius: 20;" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="50.0">
+              <columns>
+                  <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
+                  <TableColumn fx:id="nomColumn" prefWidth="75.0" text="Nom" />
+                  <TableColumn fx:id="prenomColumn" prefWidth="75.0" text="Prénom" />
+                  <TableColumn fx:id="sexeColumn" prefWidth="75.0" text="Sexe" />
+                  <TableColumn fx:id="dateNaissanceColumn" prefWidth="75.0" text="Date Naissance" />
+              </columns>
+              <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+              </columnResizePolicy>
+              <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+              </padding>
+          </TableView>
+      </children>
+   </AnchorPane>
+</VBox>
